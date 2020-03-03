@@ -28,11 +28,12 @@ class DangNhapRequest extends FormRequest
             'password' => 'required',
         ];
     }
+
     public function messages()
     {
-     return [
-         'username.required' => 'Tên đăng nhập không được để trống',
-         'password.required' => 'Mật khẩu không được để trống',
-     ];
+        return [
+            'username.required' => 'Tên đăng nhập không được để trống',
+            'password.required' => 'Mật khẩu không được để trống',
+        ];
     }
 }

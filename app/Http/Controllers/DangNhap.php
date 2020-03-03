@@ -11,11 +11,7 @@ class DangNhap extends Controller
         return view('login');
     }
     public function store(DangNhapRequest $request){
-        // $validatedData = $request->validate([
-        //     'username' => 'required|min:5',
-        //     'password' => 'required',
-        // ]);
         $validated = $request->validated();
-        return redirect()->back()->withInput();
+        // return redirect()->back();
     }
 }
